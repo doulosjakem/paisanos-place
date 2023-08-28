@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
-integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
+<?php  include "HeadLinks.php" ?>
 	<title>Paisano's Place Home</title>
 </head>
 <body>
 <?php  include "TopNav.php" ?>   
-	<main>
-		<p>This is the main content of the web page.</p>
-	</main>
+<div class="container-fluid PPtan text-center">
+
+    <!-- ADVERTISEMENT -->
+    <div class="row py-2">
+        <div class="col-4">
+            <img class="img-fluid rounded" src="images/spaghetti.jpg" alt="bowl of spaghetti">
+        <small>
+        Photo by Dana Tentis: https://www.pexels.com/photo/salted-pasta-725990/
+        </small>
+        </div>
+        <div class="col-4 border border-black rounded PPyellow PPwhitetxt">
+            <div class="PPred rounded my-2">
+                <h2>
+                    BUY ONE
+                    <br/>
+                    GET ONE
+                    <br/>
+                    HALF OFF
+                </h2>
+            </div>
+            <div class="sticky-bottom">
+                <p>Applies only to lesser value entree item.
+                Available with dine in order only.</p>
+            </div>
+        </div>
+        <div class="col-4">
+        <img class="img-fluid rounded" src="images/lasagna.jpg" alt="plate of lasagna">
+        <small>
+        Photo by Anna Guerrero: https://www.pexels.com/photo/lasagna-on-white-ceramic-plate-4079520/
+        </small>
+        </div>
+    </div>
+</div>
+
 <?php  include "BotFooter.php" ?>
 </body>
 </html>
