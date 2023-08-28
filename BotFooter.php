@@ -1,6 +1,6 @@
 <footer>
-    <div class="PPgreen border-top border-danger border-5 text-center">
-        <div class="my-2">
+    <div class="PPgreen  text-center mb-0">
+        <div class="py-2">
             <a href="./index.php">
             <img class="rounded img-fluid my-2" src="images/paisanos-place-icon.jpg" alt="chef in front of italian flag">
             </a>

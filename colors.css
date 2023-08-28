@@ -34,6 +34,12 @@
 .PPbluetxt {
     color: #001427;
 }
+.PPlblue {
+    background-color: #669bbc;
+}
+.PPlbluetxt {
+    color: #669bbc;
+}
 .PPwhite{
     background-color: whitesmoke;
 }
