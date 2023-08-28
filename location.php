@@ -7,7 +7,9 @@
 <body>
 <?php  include "TopNav.php" ?>   
 	<main>
-		<p>This is the main content of the web page.</p>
+    <div class="container-fluid PPtan text-center border-bottom border-danger border-5 py-4">
+        <h2>Location</h2>
+</div>
 	</main>
 <?php  include "BotFooter.php" ?>
 </body>
