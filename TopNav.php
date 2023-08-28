@@ -1,30 +1,22 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom border-danger">
-  <div class="container-fluid ">
-    <a class="navbar-brand border border-danger-subtle" href="#">Paisano's Place</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="container-fluid d-flex">
+    <a class="navbar-brand border border-danger-subtle me-auto" href="./index.php">Paisano's Place</a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavDropdown">
       <ul class="navbar-nav ">
-        <li class="nav-item">
-           
-          <a class="nav-link active" aria-current="page">Home</a>
+        <li class="nav-item">           
+          <a class="nav-link text-end bg-danger" aria-current="page" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link text-end" href="./about.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link text-end bg-danger" href="./location.php">Location</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-end" href="./menu.php">Menu</a>
         </li>
       </ul>
     </div>
