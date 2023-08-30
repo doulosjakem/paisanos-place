@@ -10,6 +10,12 @@
 .PPredtxt {
     color: #bf0603;
 }
+.PPredHov:link, .PPredHov:visited{
+    background-color: #bf0603;
+}
+.PPredHov:hover, .PPredHov:active{
+    background-color: #8d0801;
+}
 .PPyellow {
     background-color: #f6aa1c;
 }

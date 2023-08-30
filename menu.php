@@ -119,8 +119,10 @@
                         <div id="cartTxt"></div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary PPred" data-bs-target="#exampleModalToggle"
+                        <button class="btn PPredHov PPred text-white" data-bs-target="#exampleModalToggle"
                             data-bs-toggle="modal" data-bs-dismiss="modal">Back to Build Your Cart</button>
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Proceed to Payment</button>
                     </div>
                 </div>
             </div>
