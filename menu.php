@@ -14,7 +14,7 @@
     <?php include "TopNav.php" ?>
     <main>
 
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        <div class="modal fade" id="buildCartModal" aria-hidden=" true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content PPgreen text-center">
@@ -100,14 +100,13 @@
                         <p class="p-2 rounded PPred text-white" id="totalAmt">0 in
                             cart
                         </p>
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        <button class="btn btn-primary" data-bs-target="#checkoutModal" data-bs-toggle="modal"
                             data-bs-dismiss="modal">Checkout</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="CheckoutButton"
-            tabindex="-1">
+        <div class="modal fade" id="checkoutModal" aria-hidden="true" aria-labelledby="CheckoutButton" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content PPgreen">
                     <div class="modal-header">
@@ -119,9 +118,29 @@
                         <div id="cartTxt"></div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn PPredHov PPred text-white" data-bs-target="#exampleModalToggle"
+                        <button class="btn PPredHov PPred text-white" data-bs-target="#buildCartModal"
                             data-bs-toggle="modal" data-bs-dismiss="modal">Back to Build Your Cart</button>
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                        <button class="btn btn-primary" data-bs-target="#paymentModal" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Proceed to Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="paymentModal" aria-hidden="true" aria-labelledby="PaymentButton" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content PPgreen">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="PaymentButton">Payment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body PPtan rounded m-1">
+                        <h4>Your Cart</h4>
+                        <div id="cartTxt"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn PPredHov PPred text-white" data-bs-target="#buildCartModal"
+                            data-bs-toggle="modal" data-bs-dismiss="modal">Back to Build Your Cart</button>
+                        <button class="btn btn-primary" data-bs-target="#paymentModal" data-bs-toggle="modal"
                             data-bs-dismiss="modal">Proceed to Payment</button>
                     </div>
                 </div>
@@ -129,7 +148,7 @@
         </div>
         <div class="container-fluid PPblack PPwhitetxt text-center border-bottom border-danger border-5 py-4">
             <h2>Our Menu</h2>
-            <a class="btn btn-primary my-2" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open
+            <a class="btn btn-primary my-2" data-bs-toggle="modal" href="#buildCartModal" role="button">Open
                 Menu</a>
             <br>
             <img class="img-fluid rounded" src="images/menu.jpg" alt="a menu on a table">
