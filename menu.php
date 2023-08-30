@@ -109,18 +109,18 @@
         <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="CheckoutButton"
             tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content PPgreen">
                     <div class="modal-header">
                         <h5 class="modal-title" id="CheckoutButton">Checkout</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body PPtan rounded m-1">
                         <h4>Your Cart</h4>
                         <div id="cartTxt"></div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">Back to menu</button>
+                        <button class="btn btn-primary PPred" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal" data-bs-dismiss="modal">Back to Build Your Cart</button>
                     </div>
                 </div>
             </div>

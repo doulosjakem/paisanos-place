@@ -3,7 +3,8 @@ $(document).ready(function () {
   $spaghetti = 0;
   $chickenFettucini = 0;
   $totalItems = 0;
-  $displayTxt = "";
+  $displayTxt = "There are no items in the cart. ";
+  updateCartTxt();
 
   function updateCartTxt() {
     $displayTxt = "";
