@@ -151,11 +151,11 @@
                                         </small>
                                     </td>
                                     <td>
-                                        <div class="my-3 rounded PPred text-white">
-                                            <div class="" id="lasagnaAmt">0 in
+                                        <div class="rounded px-3 PPred text-white">
+                                            <div class="" id="lasagnaCartAmt">0 in
                                                 cart
                                             </div>
-                                            <div id="lasagnaPrice"></div>
+                                            <div id="lasagnaCartPrice"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -173,14 +173,12 @@
                                         </small>
                                     </td>
                                     <td>
-
-                                        <div class="my-3 rounded PPred text-white">
-                                            <div class="" id="spaghettiAmt">0 in
+                                        <div class="rounded px-3 PPred text-white">
+                                            <div class="" id="spaghettiCartAmt">0 in
                                                 cart
                                             </div>
-                                            <div id="spaghettiPrice"></div>
+                                            <div id="spaghettiCartPrice"></div>
                                         </div>
-
                                     </td>
                                 </tr>
                                 <tr id="chickenFettuciniCartRow" class="d-none">
@@ -197,17 +195,26 @@
                                         </small>
                                     </td>
                                     <td>
-
-                                        <div class="my-3 rounded PPred text-white">
-                                            <div class="" id="chickenFettuciniAmt">0 in
+                                        <div class="rounded px-3 PPred text-white">
+                                            <div class="" id="chickenFettuciniCartAmt">0 in
                                                 cart
                                             </div>
-                                            <div id="chickenFettuciniPrice"></div>
+                                            <div id="chickenFettuciniCartPrice"></div>
                                         </div>
-
                                     </td>
                                 </tr>
                             </tbody>
+                        </table>
+                        <table id="totalsTable" class="d-none text-center table table-striped table-bordered rounded">
+                            <tr>
+                                <h4 id="subtotal" class="text-center">Subtotal = $0</h4>
+                            </tr>
+                            <tr>
+                                <h4 id="tax" class="text-center">Tax = $0</h4>
+                            </tr>
+                            <tr>
+                                <h4 id="total" class="text-center">Total = $0</h4>
+                            </tr>
                         </table>
                     </div>
                     <div class="modal-footer">

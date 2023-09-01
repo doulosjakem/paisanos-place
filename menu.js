@@ -43,36 +43,71 @@ $(document).ready(function () {
 
     if ($lasagna == 0 && $spaghetti == 0 && $chickenFettucini == 0) {
       $("#cartWarning").removeClass("d-none");
+      $("#totalsTable").addClass("d-none");
     } else {
       $("#cartWarning").addClass("d-none");
+      $("#totalsTable").removeClass("d-none");
+      $("#subtotal").text(
+        "Subtotal = $" +
+          ($lasagnaPrice * $lasagna +
+            $spaghettiPrice * $spaghetti +
+            $chickenFettuciniPrice * $chickenFettucini)
+      );
+      $("#tax").text(
+        "Tax = $" +
+          (
+            ($lasagnaPrice * $lasagna +
+              $spaghettiPrice * $spaghetti +
+              $chickenFettuciniPrice * $chickenFettucini) *
+            0.08
+          ).toFixed(2)
+      );
+
+      $("#total").text(
+        "Total = $" +
+          (
+            ($lasagnaPrice * $lasagna +
+              $spaghettiPrice * $spaghetti +
+              $chickenFettuciniPrice * $chickenFettucini) *
+            1.08
+          ).toFixed(2)
+      );
     }
 
     //displays each only if there are some in the cart
     if ($lasagna > 0) {
       $("#lasagnaCartRow").removeClass("d-none");
+      $("#lasagnaCartAmt").text($lasagna + "\xa0in\xa0cart");
+      $("#lasagnaCartPrice").text("$" + $lasagna * $lasagnaPrice);
     } else {
       $("#lasagnaCartRow").addClass("d-none");
     }
 
     if ($spaghetti > 0) {
       $("#spaghettiCartRow").removeClass("d-none");
+      $("#spaghettiCartAmt").text($spaghetti + "\xa0in\xa0cart");
+      $("#spaghettiCartPrice").text("$" + $spaghetti * $spaghettiPrice);
     } else {
       $("#spaghettiCartRow").addClass("d-none");
     }
 
     if ($chickenFettucini > 0) {
       $("#chickenFettuciniCartRow").removeClass("d-none");
+      $("#chickenFettuciniCartAmt").text($chickenFettucini + "\xa0in\xa0cart");
+      $("#chickenFettuciniCartPrice").text(
+        "$" + $chickenFettucini * $chickenFettuciniPrice
+      );
     } else {
       $("#chickenFettuciniCartRow").addClass("d-none");
     }
   }
 
   function countUpdate() {
-    $("#lasagnaAmt").text($lasagna + " in cart");
-    $("#spaghettiAmt").text($spaghetti + " in cart");
-    $("#chickenFettuciniAmt").text($chickenFettucini + " in cart");
+    $("#lasagnaAmt").text($lasagna + "\xa0in\xa0cart");
+    $("#spaghettiAmt").text($spaghetti + "\xa0in\xa0cart");
+    $("#chickenFettuciniAmt").text($chickenFettucini + "\xa0in\xa0cart");
     $totalItems = $lasagna + $spaghetti + $chickenFettucini;
-    $("#totalAmt").text($totalItems + " in cart");
+    $("#totalAmt").text($totalItems + "\xa0in\xa0cart");
     priceUpdate();
     updateCartPage();
   }
