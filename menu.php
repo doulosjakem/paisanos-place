@@ -205,17 +205,19 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table id="totalsTable" class="d-none text-center table table-striped table-bordered rounded">
-                            <tr>
-                                <h4 id="subtotal" class="text-center">Subtotal = $0</h4>
-                            </tr>
-                            <tr>
-                                <h4 id="tax" class="text-center">Tax = $0</h4>
-                            </tr>
-                            <tr>
-                                <h4 id="total" class="text-center">Total = $0</h4>
-                            </tr>
-                        </table>
+                        <div id="totalsTable" class="d-none">
+                            <table class="table table-striped table-bordered rounded">
+                                <tr>
+                                    <h4 id="subtotal" class="text-center">Subtotal = $0</h4>
+                                </tr>
+                                <tr>
+                                    <h4 id="tax" class="text-center">Tax = $0</h4>
+                                </tr>
+                                <tr>
+                                    <h4 id="total" class="text-center">Total = $0</h4>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button class="btn PPredHov PPred text-white" data-bs-target="#buildCartModal"

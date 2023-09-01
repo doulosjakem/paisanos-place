@@ -44,9 +44,11 @@ $(document).ready(function () {
     if ($lasagna == 0 && $spaghetti == 0 && $chickenFettucini == 0) {
       $("#cartWarning").removeClass("d-none");
       $("#totalsTable").addClass("d-none");
+      $("#placeOrder").prop("disabled", true);
     } else {
       $("#cartWarning").addClass("d-none");
       $("#totalsTable").removeClass("d-none");
+      $("#placeOrder").prop("disabled", false);
       $("#subtotal").text(
         "Subtotal = $" +
           ($lasagnaPrice * $lasagna +
