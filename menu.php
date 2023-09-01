@@ -151,18 +151,12 @@
                                         </small>
                                     </td>
                                     <td>
-                                        <button id="addLasagna" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Add to Cart</button>
-                                        <br>
                                         <div class="my-3 rounded PPred text-white">
                                             <div class="" id="lasagnaAmt">0 in
                                                 cart
                                             </div>
                                             <div id="lasagnaPrice"></div>
                                         </div>
-
-                                        <button id="removeLasagna" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Remove from Cart</button>
                                     </td>
                                 </tr>
                                 <tr id="spaghettiCartRow" class="d-none">
@@ -179,17 +173,14 @@
                                         </small>
                                     </td>
                                     <td>
-                                        <button id="addSpaghetti" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Add to Cart</button>
-                                        <br>
+
                                         <div class="my-3 rounded PPred text-white">
                                             <div class="" id="spaghettiAmt">0 in
                                                 cart
                                             </div>
                                             <div id="spaghettiPrice"></div>
                                         </div>
-                                        <button id="removeSpaghetti" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Remove from Cart</button>
+
                                     </td>
                                 </tr>
                                 <tr id="chickenFettuciniCartRow" class="d-none">
@@ -206,17 +197,14 @@
                                         </small>
                                     </td>
                                     <td>
-                                        <button id="addChickenFettucini" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Add to Cart</button>
-                                        <br>
+
                                         <div class="my-3 rounded PPred text-white">
                                             <div class="" id="chickenFettuciniAmt">0 in
                                                 cart
                                             </div>
                                             <div id="chickenFettuciniPrice"></div>
                                         </div>
-                                        <button id="removeChickenFettucini" type="button" class="btn btn-primary"
-                                            data-bs-toggle="button" autocomplete="off">Remove from Cart</button>
+
                                     </td>
                                 </tr>
                             </tbody>

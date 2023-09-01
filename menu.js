@@ -10,7 +10,6 @@ $(document).ready(function () {
   $totalPrice = 0;
 
   $displayTxt = "There are no items in the cart. ";
-  updateCartTxt();
   initialPrices();
 
   function initialPrices() {
@@ -46,7 +45,6 @@ $(document).ready(function () {
       $("#cartWarning").removeClass("d-none");
     } else {
       $("#cartWarning").addClass("d-none");
-      $("#cartWarning").removeClass("d-none");
     }
 
     //displays each only if there are some in the cart
@@ -75,8 +73,8 @@ $(document).ready(function () {
     $("#chickenFettuciniAmt").text($chickenFettucini + " in cart");
     $totalItems = $lasagna + $spaghetti + $chickenFettucini;
     $("#totalAmt").text($totalItems + " in cart");
-    updateCartPage();
     priceUpdate();
+    updateCartPage();
   }
 
   function priceUpdate() {
